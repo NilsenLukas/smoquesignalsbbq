@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Smoque Signals BBQ",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "../public/images/logo/SmoqueSignalsBbq_logo-01.png",
         width: 1200,
         height: 630,
         alt: "Smoque Signals BBQ food truck and smoked meats",
