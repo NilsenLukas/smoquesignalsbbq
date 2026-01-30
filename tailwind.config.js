@@ -33,20 +33,47 @@ module.exports = {
     },
     extend: {
       colors: {
+        /*
+        * Utility
+        */
         current: "currentColor",
         transparent: "transparent",
-        white: "#FFFFFF",
-        black: "#121723",
-        dark: "#1D2430",
-        primary: "#4A6CF7",
-        yellow: "#FBB040",
-        "body-color": "#788293",
-        "body-color-dark": "#959CB1",
-        "gray-dark": "#1E232E",
-        "gray-light": "#F0F2F9",
-        stroke: "#E3E8EF",
-        "stroke-dark": "#353943",
-        "bg-color-dark": "#171C28",
+
+        /*
+        * Core Neutrals
+        */
+        white: "#FFFFFF",        // Clean white for text/logo contrast
+        black: "#121212",        // Smoke black – main site background
+        dark: "#1A1A1A",         // Coal black – cards, nav, sections
+
+        /*
+        * Brand / Primary
+        */
+        primary: "#8B1E1E",      // Ember red – primary brand color (buttons, links)
+        yellow: "#E05A2B",       // Fire orange – accents, hovers, highlights
+
+        /*
+        * Body Text
+        */
+        "body-color": "#B0B0B0",       // Muted ash – secondary text
+        "body-color-dark": "#8A8A8A",  // Darker ash – subtle text on dark surfaces
+
+        /*
+        * Grays / Surfaces
+        */
+        "gray-dark": "#1F1F1F",   // Deep charcoal – section backgrounds
+        "gray-light": "#2A2A2A",  // Soft charcoal – borders / subtle contrast
+
+        /*
+        * Borders & Lines
+        */
+        stroke: "#2A2A2A",        // Dark stroke for dividers
+        "stroke-dark": "#1C1C1C", // Extra dark stroke for depth
+
+        /*
+        * Backgrounds
+        */
+        "bg-color-dark": "#121212", // Primary page background (smoke)
       },
 
       boxShadow: {
