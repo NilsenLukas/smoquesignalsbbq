@@ -59,15 +59,15 @@ const Header = () => {
                 <Image
                   src="/images/logo/SmoqueSignalsBbq_logo-01.png"
                   alt="logo"
-                  width={140}
-                  height={30}
+                  width={120}
+                  height={26}
                   className="w-full dark:hidden"
                 />
                 <Image
                   src="/images/logo/SmoqueSignalsBbq_logo-01.png"
                   alt="logo"
-                  width={140}
-                  height={30}
+                  width={120}
+                  height={26}
                   className="hidden w-full dark:block"
                 />
               </Link>
@@ -158,11 +158,11 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
+              {/* <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <div>
                   <ThemeToggler />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
