@@ -35,11 +35,11 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
-      <Video />
+      {/* <Video /> */}
       <AboutSectionOne />
       <AboutSectionTwo />
       <Testimonials />
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 }
