@@ -5,28 +5,27 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Satisfied Customer",
+    designation: "Local BBQ Fan",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "The flavor is unreal. You can taste the time and care put into every bite.",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+    name: "Happy Customer",
+    designation: "Returning Guest",
+    content: "Best brisket I’ve had in Wisconsin. Tender, smoky, and full of flavor.",
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Loyal Customer",
+    designation: "Community Supporter",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "From the meat to the sides, everything was excellent. We’ll be back.",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },
@@ -37,8 +36,8 @@ const Testimonials = () => {
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="What Our Customers Say"
+          paragraph="Real feedback from people who know great barbecue."
           center
         />
 

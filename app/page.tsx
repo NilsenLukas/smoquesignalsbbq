@@ -37,7 +37,7 @@ export default function Home() {
       <Features />
       {/* <Video /> */}
       <AboutSectionOne />
-      <AboutSectionTwo />
+      {/* <AboutSectionTwo /> */}
       <Testimonials />
       {/* <Contact /> */}
     </>

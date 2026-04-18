@@ -24,8 +24,10 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="Real BBQ. Real Smoke. Real Passion."
+                paragraph="Smoque Signals takes the time to cook one batch at a time on our 100% wood fired offset smokers for that authentic smoke flavor. All of our meat is smoqued low and slow with our own unique blend of spices that deliver bold flavors our customers have grown to love.
+
+We believe in quality over quantity so every customer experiences delicious barbecue each and every time."
                 mb="44px"
               />
 
@@ -35,36 +37,35 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
+                    <List text="Authentic Wood Smoke" />
+                    <List text="Small Batch Quality" />
+                    <List text="Texas Inspired Flavor" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
+                    <List text="Community Focused" />
+                    <List text="Bold Signature Rubs" />
+                    <List text="Slow-Smoked Daily" />
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="w-full px-4 lg:w-1/2">
-              <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
-                data-wow-delay=".2s"
-              >
+              <div className="wow fadeInUp relative mx-auto w-full max-w-full lg:mr-0">
                 <Image
-                  src="/images/about/about-image.svg"
+                  src="/images/about/truck.JPG"
                   alt="about-image"
-                  fill
-                  className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
+                  width={900}
+                  height={600}
+                  className="w-full h-auto object-contain drop-shadow-three dark:hidden"
                 />
                 <Image
-                  src="/images/about/about-image-dark.svg"
+                  src="/images/about/truck.JPG"
                   alt="about-image"
-                  fill
-                  className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"
+                  width={900}
+                  height={600}
+                  className="w-full h-auto object-contain drop-shadow-three hidden dark:block"
                 />
               </div>
             </div>

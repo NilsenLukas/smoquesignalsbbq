@@ -30,8 +30,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                  Thank you for visiting our site!
                 </p>
                 <div className="flex items-center">
                   <a
