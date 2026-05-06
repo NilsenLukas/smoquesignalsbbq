@@ -1,60 +1,47 @@
 import Image from "next/image";
 
+const foodImages = [
+  { src: "/images/Food/Brisket.jpg", alt: "Smoque Signals BBQ brisket" },
+  { src: "/images/Food/BrisketSlice.jpg", alt: "Sliced brisket" },
+  { src: "/images/Food/Brots.jpeg", alt: "BBQ brats" },
+  { src: "/images/Food/BurntEnds.jpeg", alt: "Burnt ends" },
+  { src: "/images/Food/MacAndCheese.jpg", alt: "Mac and cheese" },
+  { src: "/images/Food/PulledPork1.jpeg", alt: "Pulled pork" },
+  { src: "/images/Food/PulledPork2.jpg", alt: "Pulled pork plate" },
+  { src: "/images/Food/Sampler.jpg", alt: "BBQ sampler" },
+  { src: "/images/Food/Wings.jpg", alt: "BBQ wings" },
+];
+
 const AboutSectionTwo = () => {
   return (
     <section className="py-16 md:py-20 lg:py-28">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap items-center">
-          <div className="w-full px-4 lg:w-1/2">
+        <div className="mx-auto mb-12 max-w-[700px] text-center">
+          <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl">
+            Smoqued Low & Slow
+          </h2>
+          <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg">
+            Take a look at some of our small batch BBQ favorites, smoked over
+            real wood and served with bold flavor.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {foodImages.map((image) => (
             <div
-              className="wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0"
+              key={image.src}
+              className="wow fadeInUp relative aspect-[4/3] overflow-hidden rounded-lg shadow-three"
               data-wow-delay=".15s"
             >
               <Image
-                src="/images/about/about-image-2.svg"
-                alt="about image"
+                src={image.src}
+                alt={image.alt}
                 fill
-                className="drop-shadow-three dark:hidden dark:drop-shadow-none"
-              />
-              <Image
-                src="/images/about/about-image-2-dark.svg"
-                alt="about image"
-                fill
-                className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover object-center transition duration-300 hover:scale-105"
               />
             </div>
-          </div>
-          <div className="w-full px-4 lg:w-1/2">
-            <div className="wow fadeInUp max-w-[470px]" data-wow-delay=".2s">
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
-              </div>
-              <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Next.js
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
